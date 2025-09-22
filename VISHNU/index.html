@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Vishnu-Brick Industries</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-red-800 text-white shadow">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+      <div class="flex items-center space-x-3">
+  <img src="images/logo.png" alt="Logo" class="h-12 w-12 object-contain" />
+  <span class="text-xl font-bold">Vishnu-Brick Industries</span>
+</div>
+
+      <nav class="space-x-4">
+        <a href="index.html" class="underline font-semibold">Home</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="products.html" class="hover:underline">Products</a>
+        <a href="gallery.html" class="hover:underline">Gallery</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center text-white text-center py-24" style="background-image: url('images/brick-bg.jpg');">
+    <div class="bg-black bg-opacity-50 p-6">
+      <h2 class="text-4xl font-bold mb-4">Quality Bricks for Strong Foundations</h2>
+      <p class="text-lg mb-6">Trusted by builders, delivered with pride.</p>
+      <a href="products.html" class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded text-white transition">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <!-- Who We Are Section -->
+<section class="bg-white py-16" id="about">
+  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Text Content -->
+    <div>
+      <h2 class="text-3xl font-bold text-red-800 mb-4">Who We Are</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        At Vishnu Bricks, we specialize in crafting high-quality red bricks using a blend of traditional techniques and modern technology.
+        Our commitment to durability, sustainability, and customer satisfaction has made us a trusted name in the brick industry.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        With decades of experience and a focus on innovation, we deliver excellence in every brick.
+        Whether it's for homes, commercial spaces, or infrastructure, Vishnu Bricks is built to last.
+      </p>
+    </div>
+
+    <!-- Factory Image -->
+    <div>
+      <img src="images\brick.jpg" alt="Our Brick Factory"
+           class="rounded-xl shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:scale-105">
+    </div>
+    
+  </div>
+</section>
+
+
+  <!-- Why Choose Us -->
+  <section class="bg-white py-16 px-4">
+    <div class="text-center mb-10">
+      <h3 class="text-2xl font-bold text-red-800 mb-4">Why Choose Vishnu Bricks?</h3>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="p-6 shadow-lg rounded-xl text-center bg-gray-50">
+        <h4 class="text-lg font-semibold mb-2">40+ Years Experience</h4>
+        <p class="text-sm">Our legacy ensures the highest standards in the brick-making industry.</p>
+      </div>
+      <div class="p-6 shadow-lg rounded-xl text-center bg-gray-50">
+        <h4 class="text-lg font-semibold mb-2">Quality & Consistency</h4>
+        <p class="text-sm">We use refined clay and modern kilns to deliver uniform and strong bricks.</p>
+      </div>
+      <div class="p-6 shadow-lg rounded-xl text-center bg-gray-50">
+        <h4 class="text-lg font-semibold mb-2">Eco-Friendly Process</h4>
+        <p class="text-sm">Committed to sustainable practices with minimal environmental impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Highlights -->
+  <section class="py-16 px-4">
+    <h3 class="text-2xl font-bold text-center text-red-800 mb-8">Popular Products</h3>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white rounded shadow p-4 text-center">
+        <img src="images/clay brick.jpeg" alt="Red Clay Brick" class="w-full h-40 object-cover rounded mb-4">
+        <h4 class="font-semibold">Red Clay Brick</h4>
+      </div>
+      <div class="bg-white rounded shadow p-4 text-center">
+        <img src="images/fly ash bricks.jpeg" alt="Fly-Ash Brick" class="w-full h-40 object-cover rounded mb-4">
+        <h4 class="font-semibold">Fly-Ash Brick</h4>
+      </div>
+      <div class="bg-white rounded shadow p-4 text-center">
+        <img src="images/brick.jpg" alt="Clay Bricks" class="w-full h-40 object-cover rounded mb-4">
+        <h4 class="font-semibold">Clay Bricks</h4>
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      <a href="products.html" class="text-red-700 font-semibold underline">View All Products</a>
+    </div>
+  </section>
+
+  <!-- Gallery Preview -->
+  <section class="bg-gray-100 py-16 px-4">
+    <h3 class="text-2xl font-bold text-center text-red-800 mb-8">Gallery</h3>
+    <div class="flex space-x-4 overflow-x-auto px-4">
+      <img src="images/GunduRallu.jpeg" class="h-40 rounded shadow" alt="Gallery 1">
+      <img src="images/Kankara Stones.jpeg" class="h-40 rounded shadow" alt="Gallery 2">
+      <img src="images/NiceSand.jpeg" class="h-40 rounded shadow" alt="Gallery 3">
+    </div>
+    <div class="text-center mt-6">
+      <a href="gallery.html" class="text-red-700 font-semibold underline">View Full Gallery</a>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-red-700 text-white py-12 text-center">
+    <h3 class="text-2xl font-bold mb-2">Looking for bulk brick supply?</h3>
+    <p class="mb-4">Contact our team today to discuss your construction needs.</p>
+    <a href="contact.html" class="bg-white text-red-700 px-6 py-2 rounded font-semibold hover:bg-gray-200 transition">Contact Us</a>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer class="bg-red-800 text-white text-center py-6">
+    <p>&copy; 2025 Vishnu-Brick Industries. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Vishnu-Brick Industries</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-red-800 text-white shadow">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+       <div class="flex items-center space-x-3">
+  <img src="images/logo.png" alt="Logo" class="h-12 w-12 object-contain" />
+  <span class="text-xl font-bold">Vishnu-Brick Industries</span>
+</div>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="products.html" class="hover:underline">Products</a>
+        <a href="gallery.html" class="hover:underline">Gallery</a>
+        <a href="contact.html" class="hover:underline font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="container mx-auto px-4 py-12 fade-in">
+    <h2 class="text-3xl font-bold text-center text-red-800 mb-10">Get in Touch</h2>
+
+    <!-- Owner Cards -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <!-- Owner 1 -->
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2 text-center">
+        <img src="images/owner1.jpg" alt="Owner 1" class="w-28 h-28 rounded-full object-cover mx-auto mb-4 border-4 border-red-200">
+        <h3 class="text-xl font-semibold text-red-800">LATE Sri.DANDU MUNEPPA</h3>
+        <p class="text-gray-600 mb-2">Founder & Managing Director</p>
+        <p class="text-sm"><strong>✉️</strong> VishnuBricks@gmail.com</p>
+      </div>
+
+      <!-- Owner 2 -->
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2 text-center">
+        <img src="images/owner2.jpg" alt="Owner 2" class="w-28 h-28 rounded-full object-cover mx-auto mb-4 border-4 border-red-200">
+        <h3 class="text-xl font-semibold text-red-800">Sri.DANDU NAGARAJU</h3>
+        <p class="text-gray-600 mb-2">Co-Founder & Operations Head</p>
+        <p class="text-sm"><strong>📞</strong> +91 9177114628</p>
+        <p class="text-sm"><strong>✉️</strong> VishnuBricks@gmail.com</p>
+      </div>
+
+      <!-- Owner 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-2 text-center">
+        <img src="images/owner3.jpg" alt="Owner 3" class="w-28 h-28 rounded-full object-cover mx-auto mb-4 border-4 border-red-200">
+        <h3 class="text-xl font-semibold text-red-800">Sri.DANDU ANANDKUMAR</h3>
+        <p class="text-gray-600 mb-2">Finance & Strategy Lead</p>
+        <p class="text-sm"><strong>📞</strong> +91 9849826098</p>
+        <p class="text-sm"><strong>✉️</strong> VishnuBricks@gmail.com</p>
+      </div>
+    </div>
+
+    <!-- Contact and Map Section -->
+    <div class="grid md:grid-cols-2 gap-8 fade-in">
+      
+      <!-- Contact Form -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4 text-red-700">Any issues? Please contact us below.</h3>
+        <form 
+          action="https://formsubmit.co/dandu.harshavishnuvardhan1234@gmail.com" 
+          method="POST"
+          class="bg-white p-6 rounded shadow space-y-4"
+        >
+          <!-- Hidden FormSubmit config -->
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="New Contact Submission from Website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="thankyou.html">
+
+          <div>
+            <label class="block font-medium mb-1">Name</label>
+            <input type="text" name="name" class="w-full border px-4 py-2 rounded focus:outline-red-700" required>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Email</label>
+            <input type="email" name="email" class="w-full border px-4 py-2 rounded focus:outline-red-700" required>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Phone</label>
+            <input type="tel" name="phone" pattern="[0-9]{10}" class="w-full border px-4 py-2 rounded focus:outline-red-700" required>
+          </div>
+
+          <div>
+            <label class="block font-medium mb-1">Message</label>
+            <textarea name="message" rows="4" class="w-full border px-4 py-2 rounded focus:outline-red-700" required></textarea>
+          </div>
+
+          <button type="submit" class="bg-red-700 text-white px-6 py-2 rounded hover:bg-red-900 hover:scale-105 transition-transform duration-300">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Google Map -->
+      <div class="aspect-video rounded overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2000517260476!2d77.61175257413343!3d14.64458258584697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb14b67bdcf7183%3A0xbac5623bf8dbe71e!2sGMR%20CONVENTION%20Function%20Hall!5e0!3m2!1sen!2sin!4v1754074350200!5m2!1sen!2sin" 
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-800 text-white text-center py-6 mt-12">
+    <p>&copy; 2025 Vishnu-Brick Industries. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
